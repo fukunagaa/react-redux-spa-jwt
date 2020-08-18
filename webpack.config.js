@@ -4,7 +4,7 @@ module.exports = {
   mode: "development",
   // エントリポイントの定義
   entry: {
-    app: [path.join(__dirname, "src/app.js")],
+    app: [path.join(__dirname, "src/index.js")],
   },
   // 出力先の定義
   output: {
