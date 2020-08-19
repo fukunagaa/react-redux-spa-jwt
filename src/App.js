@@ -6,9 +6,11 @@ import Test from "./components/Test";
 import Test2 from "./components/Test2";
 import Test3 from "./components/Test3";
 import Test4 from "./components/Test4";
+import Login from "./components/Login";
+import Account from "./components/Account";
 
 const App = () => {
-  const isLogin = false;
+  const isLogin = true;
   return (
     <Router>
       <Layout>
@@ -16,7 +18,10 @@ const App = () => {
           <Test />
         </Route>
         <Route exact path="/login">
-          <Test />
+          <Login />
+        </Route>
+        <Route exact path="/account">
+          <Account />
         </Route>
         <Route path="/about">
           <Test2 />
