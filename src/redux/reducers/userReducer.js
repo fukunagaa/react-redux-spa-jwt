@@ -1,9 +1,9 @@
 import { userInitialState } from "../initialState";
-import { LOGIN } from "../actionTypes";
+import { LOAD_LOGIN } from "../actionTypes";
 
 export default function (state = userInitialState, action) {
   switch (action.type) {
-    case LOGIN:
+    case LOAD_LOGIN:
       return {
         ...state,
         isLogin: action.payload.isLogin,

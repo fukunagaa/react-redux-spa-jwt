@@ -1,8 +1,8 @@
-import { LOGIN } from "./actionTypes";
+import { LOAD_LOGIN } from "./actionTypes";
 
 export const loadLogin = (isLogin) => {
   return {
-    type: LOGIN,
+    type: LOAD_LOGIN,
     payload: isLogin,
   };
 };
