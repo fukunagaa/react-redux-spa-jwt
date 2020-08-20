@@ -3,6 +3,7 @@ import { withRouter } from "react-router-dom";
 import NavBar from "./NavBar";
 
 const Layout = ({ location, children }) => {
+  console.log(location);
   return (
     <div>
       <NavBar location={location} />

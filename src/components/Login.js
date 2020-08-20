@@ -6,7 +6,6 @@ import { loadLogin } from "../redux/actions";
 const Login = () => {
   const dispatch = useDispatch();
   const login = () => {
-    alert("a");
     dispatch(loadLogin({ isLogin: true }));
   };
   return (
