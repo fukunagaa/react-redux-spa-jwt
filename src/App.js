@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import Layout from "./components/Layout";
 import Test from "./components/Test";
@@ -10,7 +11,9 @@ import Login from "./components/Login";
 import Account from "./components/Account";
 
 const App = () => {
-  const isLogin = true;
+  const user = useSelector((state) => state.user);
+  const isLogin = user.isLogin;
+  console.log("isLogin :" + isLogin);
   return (
     <Router>
       <Layout>

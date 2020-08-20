@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import className from "classnames";
 
 const NavBar = ({ location }) => {
-  const isLogin = false;
+  const user = useSelector((state) => state.user);
+  const isLogin = user.isLogin;
   const homeClass = location.pathname === "/" ? "active" : "";
   const aboutClass = location.pathname.match(/^\/about/) ? "active" : "";
   const userClass = location.pathname.match(/^\/user/) ? "active" : "";
