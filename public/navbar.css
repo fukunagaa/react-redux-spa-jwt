@@ -27,6 +27,10 @@ nav li a:hover {
   margin-left: auto;
 }
 
+.account {
+  margin-left: auto;
+}
+
 .active {
   background-color: #29634c;
 }

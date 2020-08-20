@@ -11,7 +11,7 @@ const NavBar = ({ location }) => {
   const loginClass = location.pathname.match(/^\/login/) ? "active" : "";
   const accountClass = location.pathname.match(/^\/account/) ? "active" : "";
   const rightNav = isLogin ? (
-    <li className={"login " + accountClass}>
+    <li className={"account " + accountClass}>
       <Link to="/account">アカウント</Link>
     </li>
   ) : (
