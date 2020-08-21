@@ -32,6 +32,34 @@
   margin-top: 8px;
 }
 
+.login-logo-container {
+  text-align: center;
+}
+
+.circle-logo {
+  margin: 30px auto;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(220, 0, 78);
+}
+
+.image-logo {
+  padding-top: 9px;
+  width: 30px;
+  height: 30px;
+  /* 画像をselect不可 */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.white {
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+    brightness(107%) contrast(101%);
+}
+
 .login-title {
   text-align: center;
 }

@@ -2,16 +2,23 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import className from "classnames";
 import { loadLogin } from "../redux/actions";
+import Icon from "../assets/lock-black-18dp.svg";
 
 const Login = () => {
   const dispatch = useDispatch();
   const login = () => {
     dispatch(loadLogin({ isLogin: true }));
   };
+  console.log(Icon);
   return (
     <div className={"login-container"}>
       <div className={"login-sub-countainer"}>
         <div className={"title-container"}>
+          <div className={"login-logo-container"}>
+            <div className={"circle-logo"}>
+              <img className={"image-logo white"} src={Icon} />
+            </div>
+          </div>
           <h3 className={"login-title"}>Login</h3>
         </div>
         <div className={"login-form"}>
