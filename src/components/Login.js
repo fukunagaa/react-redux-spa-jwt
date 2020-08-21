@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import className from "classnames";
 import { loadLogin } from "../redux/actions";
 import Icon from "../assets/lock-black-18dp.svg";
@@ -63,7 +64,7 @@ const Login = () => {
               <a href="/forget">パスワードを忘れた?</a>
             </div>
             <div>
-              <a href="/signup">アカウント作成</a>
+              <Link to="/signup">アカウント作成</Link>
             </div>
           </div>
         </div>
