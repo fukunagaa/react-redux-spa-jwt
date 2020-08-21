@@ -24,7 +24,7 @@ const App = () => {
           {isLogin ? <Redirect to={"/"} /> : <Login />}
         </Route>
         <Route exact path="/account">
-          <Account />
+          {isLogin ? <Account /> : <Redirect to={"/login"} />}
         </Route>
         <Route path="/about">
           <Test2 />
