@@ -1,0 +1,48 @@
+/** labelでplaceholderを表示するための設定 **/
+.label-input-placeholder {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+/** inputエリアの通常設定 **/
+.label-input-placeholder input {
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 18px 14px;
+  font-size: inherit;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/** inputエリアをhover時の色 **/
+.label-input-placeholder input:hover {
+  background: rgba(34, 50, 84, 0.03);
+}
+
+/** placeholderの設定 **/
+.label-input-placeholder .label-placeholder {
+  /** placeholderが上に移動する速度と位置設定 **/
+  transition: all 1s ease;
+  transform-origin: 0 0;
+  /** placeholderの色 **/
+  color: #9098a9;
+  /** placeholderの位置 **/
+  position: absolute;
+  top: 2px;
+  left: 20px;
+}
+
+/** フォーカスアウト時のplaceholder **/
+.label-input-placeholder input:not(:placeholder-shown) + span {
+  color: #5a667f;
+  transform: translateY(-18px) scale(0.64);
+}
+
+/** フォーカスイン時のplaceholder **/
+.label-input-placeholder input:focus + span {
+  /** placeholderが上の時の色の設定 **/
+  color: #07f;
+  /** placeholderが上へ動く位置の設定 **/
+  transform: translateY(-18px) scale(0.75);
+}

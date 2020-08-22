@@ -18,45 +18,57 @@ const Signup = () => {
         <div className={"signup-form"}>
           <div className={"signup-input-two-container"}>
             <div className={"signuo-name-input-area"}>
-              <input
-                type="text"
-                name="firstName"
-                id="firstName"
-                placeholder="First Name *"
-                required
-                className={"signup-name-input"}
-              />
+              <label className="label-input-placeholder">
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="&nbsp;"
+                  required
+                  className={"label-input-placeholder"}
+                />
+                <span className="label-placeholder">First Name *</span>
+              </label>
             </div>
             <div className={"signuo-name-input-area"}>
-              <input
-                type="text"
-                name="lastName"
-                id="lastName"
-                placeholder="Last Name *"
-                required
-                className={"signup-name-input"}
-              />
+              <label className="label-input-placeholder">
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="&nbsp;"
+                  required
+                  className={"label-input-placeholder"}
+                />
+                <span className="label-placeholder">Last Name *</span>
+              </label>
             </div>
           </div>
           <div className={"signup-input-container"}>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="Email Address *"
-              required
-              className={"signup-input"}
-            />
+            <label className="label-input-placeholder">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="&nbsp;"
+                required
+                className={"label-input-placeholder"}
+              />
+              <span className="label-placeholder">Email Address *</span>
+            </label>
           </div>
           <div className={"signup-input-container"}>
-            <input
-              type="text"
-              name="password"
-              id="password"
-              placeholder="Password *"
-              required
-              className={"signup-input"}
-            />
+            <label className="label-input-placeholder">
+              <input
+                type="text"
+                name="password"
+                id="password"
+                placeholder="&nbsp;"
+                required
+                className={"label-input-placeholder"}
+              />
+              <span className="label-placeholder">Password *</span>
+            </label>
           </div>
           <div className={"checkbox-container"}>
             <label>
