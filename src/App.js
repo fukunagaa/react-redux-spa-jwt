@@ -9,6 +9,7 @@ import Test3 from "./components/Test3";
 import Test4 from "./components/Test4";
 import Login from "./components/Login";
 import Account from "./components/Account";
+import Signup from "./components/Signup";
 
 const App = () => {
   const user = useSelector((state) => state.user);
@@ -25,6 +26,9 @@ const App = () => {
         </Route>
         <Route exact path="/account">
           {isLogin ? <Account /> : <Redirect to={"/login"} />}
+        </Route>
+        <Route exact path="/signup">
+          <Signup />
         </Route>
         <Route path="/about">
           <Test2 />
