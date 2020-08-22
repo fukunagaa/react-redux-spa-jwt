@@ -24,24 +24,30 @@ const Login = () => {
         </div>
         <div className={"login-form"}>
           <div className={"login-input-container"}>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="Email Address *"
-              required
-              className={"login-input"}
-            />
+            <label className="label-input-placeholder">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="&nbsp;"
+                required
+                className={"label-input-placeholder"}
+              />
+              <span className="label-placeholder">Email Address *</span>
+            </label>
           </div>
           <div className={"login-input-container"}>
-            <input
-              type="text"
-              name="password"
-              id="password"
-              placeholder="Password *"
-              required
-              className={"login-input"}
-            />
+            <label className="label-input-placeholder">
+              <input
+                type="text"
+                name="password"
+                id="password"
+                placeholder="&nbsp;"
+                required
+                className={"label-input-placeholder"}
+              />
+              <span className="label-placeholder">Password *</span>
+            </label>
           </div>
           <div className={"checkbox-container"}>
             <label>

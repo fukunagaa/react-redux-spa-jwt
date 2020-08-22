@@ -71,14 +71,6 @@
   box-sizing: content-box;
 }
 
-.login-input {
-  width: 100%;
-  padding: 18px 14px;
-  font-size: inherit;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
 .login-button-container {
   margin-top: 16px;
   margin-bottom: 8px;
