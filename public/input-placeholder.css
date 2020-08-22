@@ -35,14 +35,26 @@
 
 /** フォーカスアウト時のplaceholder **/
 .label-input-placeholder input:not(:placeholder-shown) + span {
+  padding: 0px 5px;
+  /** 色の設定 **/
   color: #5a667f;
-  transform: translateY(-18px) scale(0.64);
+  background-color: white;
+  /** 動く位置の設定 **/
+  transform: translateY(-26px) scale(0.75);
 }
 
 /** フォーカスイン時のplaceholder **/
 .label-input-placeholder input:focus + span {
-  /** placeholderが上の時の色の設定 **/
+  z-index: 4px;
+  padding: 0px 5px;
+  /** 色の設定 **/
   color: #07f;
-  /** placeholderが上へ動く位置の設定 **/
-  transform: translateY(-18px) scale(0.75);
+  background-color: white;
+  /** 動く位置の設定 **/
+  transform: translateY(-26px) scale(0.75);
+}
+
+/** hover時 **/
+.label-input-placeholder input:hover {
+  background: rgba(34, 50, 84, 0.03);
 }
