@@ -1,92 +1,10 @@
-.signup-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.signup-sub-countainer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0px 24px;
-  margin: 0px 300px 0px 301px;
-}
-
-.signup-form {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 440px;
-  min-width: 300px;
-  margin: 0 auto;
-  padding-left: 24px;
-  padding-right: 24px;
-  width: 100%;
-  margin-top: 8px;
-}
-
-.signup-logo-container {
-  text-align: center;
-}
-
-.signup-image-logo {
+.signup-logo {
   padding-top: 3px;
   width: 40px;
   height: 40px;
-  /* 画像をselect不可 */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
-.signup-title {
-  text-align: center;
-}
-
-.signup-input-two-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 16px;
-  margin-bottom: 8px;
-  width: 100%;
-  box-sizing: content-box;
-}
-
-.signup-input-container {
-  margin-top: 16px;
-  margin-bottom: 8px;
-  width: 100%;
-  box-sizing: content-box;
-}
-
-.signuo-name-input-area {
-  max-width: 49%;
-}
-
-.signup-button-container {
-  margin-top: 16px;
-  margin-bottom: 8px;
-  width: 100%;
-  box-sizing: content-box;
-}
-
-.signup-button {
-  margin: 24px 0px 16px;
-  padding: 6px 16px;
-  width: 100%;
-  background-color: rgb(78, 181, 250);
-  border: none;
-  box-shadow: 0 0 8px rgb(128, 128, 128);
-  font-size: 15px;
-  color: aliceblue;
-  font-weight: bold;
-  box-sizing: border-box;
-  border-radius: 4px;
-  line-height: 1.75em;
-}
-
-.select-container {
+.link-signup-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

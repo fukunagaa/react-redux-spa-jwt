@@ -12,18 +12,18 @@ const Login = () => {
   };
   console.log(Icon);
   return (
-    <div className={"login-container"}>
-      <div className={"login-sub-countainer"}>
+    <div className={"main-container"}>
+      <div className={"contents-container"}>
         <div className={"title-container"}>
-          <div className={"login-logo-container"}>
-            <div className={"circle-logo"}>
-              <img className={"image-logo white"} src={Icon} />
+          <div className={"text-align-center"}>
+            <div className={"logo-circle-area"}>
+              <img className={"login-logo no-select white"} src={Icon} />
             </div>
           </div>
-          <h3 className={"login-title"}>Login</h3>
+          <h3 className={"text-align-center"}>Login</h3>
         </div>
-        <div className={"login-form"}>
-          <div className={"login-input-container"}>
+        <div className={"form-container"}>
+          <div className={"input-big-area"}>
             <label className="label-input-placeholder">
               <input
                 type="text"
@@ -36,7 +36,7 @@ const Login = () => {
               <span className="label-placeholder">Email Address *</span>
             </label>
           </div>
-          <div className={"login-input-container"}>
+          <div className={"input-big-area"}>
             <label className="label-input-placeholder">
               <input
                 type="text"
@@ -60,12 +60,12 @@ const Login = () => {
               <span className={"checkbox-parts"}>remenber me</span>
             </label>
           </div>
-          <div className={"login-button-container"}>
-            <button className={"login-button"} onClick={() => login()}>
+          <div className={"submit-btn-area"}>
+            <button className={"submit-btn"} onClick={() => login()}>
               Login
             </button>
           </div>
-          <div className={"create-container"}>
+          <div className={"link-login-container"}>
             <div>
               <a href="/forget">パスワードを忘れた?</a>
             </div>

@@ -5,19 +5,19 @@ import Icon from "../assets/create-signup.svg";
 
 const Signup = () => {
   return (
-    <div className={"signup-container"}>
-      <div className={"signup-sub-countainer"}>
+    <div className={"main-container"}>
+      <div className={"contents-container"}>
         <div className={"title-container"}>
-          <div className={"signup-logo-container"}>
-            <div className={"circle-logo"}>
-              <img className={"signup-image-logo white"} src={Icon} />
+          <div className={"text-align-center"}>
+            <div className={"logo-circle-area"}>
+              <img className={"signup-logo no-select white"} src={Icon} />
             </div>
           </div>
-          <h3 className={"signup-title"}>Sign up</h3>
+          <h3 className={"text-align-center"}>Sign up</h3>
         </div>
-        <div className={"signup-form"}>
-          <div className={"signup-input-two-container"}>
-            <div className={"signuo-name-input-area"}>
+        <div className={"form-container"}>
+          <div className={"input-flex-row-container"}>
+            <div className={"input-small-area"}>
               <label className="label-input-placeholder">
                 <input
                   type="text"
@@ -30,7 +30,7 @@ const Signup = () => {
                 <span className="label-placeholder">First Name *</span>
               </label>
             </div>
-            <div className={"signuo-name-input-area"}>
+            <div className={"input-small-area"}>
               <label className="label-input-placeholder">
                 <input
                   type="text"
@@ -44,7 +44,7 @@ const Signup = () => {
               </label>
             </div>
           </div>
-          <div className={"signup-input-container"}>
+          <div className={"input-big-area"}>
             <label className="label-input-placeholder">
               <input
                 type="text"
@@ -57,7 +57,7 @@ const Signup = () => {
               <span className="label-placeholder">Email Address *</span>
             </label>
           </div>
-          <div className={"signup-input-container"}>
+          <div className={"input-big-area"}>
             <label className="label-input-placeholder">
               <input
                 type="text"
@@ -81,12 +81,12 @@ const Signup = () => {
               <span className={"checkbox-parts"}>メールマガジン登録</span>
             </label>
           </div>
-          <div className={"signup-button-container"}>
-            <button className={"signup-button"} onClick={() => signup()}>
+          <div className={"submit-btn-area"}>
+            <button className={"submit-btn"} onClick={() => signup()}>
               Sign up
             </button>
           </div>
-          <div className={"select-container"}>
+          <div className={"link-signup-container"}>
             <div>
               <Link to="/login">ログインへ</Link>
             </div>
