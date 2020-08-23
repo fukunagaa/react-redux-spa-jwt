@@ -38,6 +38,10 @@ module.exports = {
         include: [path.join(__dirname, "src/assets")],
         loader: "file-loader?name=public/[name].[ext]",
       },
+      {
+        test: /\.(jpg|png)$/,
+        loaders: "url-loader",
+      },
     ],
   },
 };
