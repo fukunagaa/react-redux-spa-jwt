@@ -4,7 +4,7 @@ module.exports = {
   mode: "development",
   // エントリポイントの定義
   entry: {
-    app: [path.join(__dirname, "src/app.js")],
+    app: [path.join(__dirname, "src/index.js")],
   },
   // 出力先の定義
   output: {
@@ -32,6 +32,11 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+        include: [path.join(__dirname, "src/assets")],
+        loader: "file-loader?name=public/[name].[ext]",
       },
     ],
   },
