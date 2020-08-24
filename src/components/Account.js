@@ -20,17 +20,21 @@ const Account = () => {
           </div>
           <section className={"account-section-area"}>
             <div className={"section-title-area"}>
-              <h3>hogehoge</h3>
-              <button>フォローする</button>
+              <h2 className={"section-user-id"}>demo hook</h2>
+              <div className={"follow-button-area"}>
+                <button className={"follow-button"}>フォローする</button>
+              </div>
             </div>
             <ul className={"section-sub-area"}>
               <li className={"section-sub-li"}>投稿222件</li>
               <li className={"section-sub-li"}>フォロワー6700人</li>
               <li className={"section-sub-li"}>フォロー数5001人</li>
             </ul>
-            <p>田中　太郎</p>
-            <p>このアカウントはテスト用のものである。</p>
-            <a href="http://example.co.jp">http://example.co.jp</a>
+            <div className={"section-user-info-area"}>
+              <h1 className={"section-user-name"}>田中太郎</h1>
+              <p>このアカウントはテスト用のものである。</p>
+              <a href="http://example.co.jp">http://example.co.jp</a>
+            </div>
           </section>
         </header>
         <hr />
