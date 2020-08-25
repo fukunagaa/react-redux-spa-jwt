@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux";
 import { loadLogin } from "../redux/actions";
 import className from "classnames";
 import Icon from "../assets/cat-icon1.jpg";
+import articlesIcon from "../assets/articles.svg";
+import tagIcon from "../assets/tag-face.svg";
 import articles from "../dummies/articles";
 
 const Account = () => {
@@ -34,18 +36,43 @@ const Account = () => {
             </ul>
             <div className={"section-user-info-area"}>
               <h1 className={"section-user-name"}>デモタロウ</h1>
-              <p>このアカウントはテスト用のものである。</p>
-              <a href="http://example.co.jp">http://example.co.jp</a>
+              <p className={"section-user-phrase"}>
+                このアカウントはテスト用のものである。
+                <br />
+                DEMO HOOK
+                <br />
+                ■■●●♪♪
+                <br />
+                <a className={"section-user-link"} href="#">
+                  @demo_hook
+                </a>
+              </p>
+              <a className={"section-link"} href="http://example.co.jp">
+                http://example.co.jp
+              </a>
             </div>
           </section>
         </header>
         <hr />
         <div className={"article-selector-container"}>
-          <a className={"article-selector-article article-selector"} href="#">
-            投稿
+          <a
+            className={
+              "article-selector-article article-selector none-decoration-a"
+            }
+            href="#"
+          >
+            <span className={"article-selector-span"}>
+              <img className={"article-selector-icon"} src={articlesIcon} />
+              <span className={"article-selector-sub-text"}>投稿</span>
+            </span>
           </a>
-          <a className={"article-selector"} href="#">
-            タグ付けされている人
+          <a className={"article-selector none-decoration-a"} href="#">
+            <span className={"article-selector-span"}>
+              <img className={"article-selector-icon"} src={tagIcon} />
+              <span className={"article-selector-sub-text"}>
+                タグ付けされている人
+              </span>
+            </span>
           </a>
         </div>
         <div className={"account-articles-container"}>

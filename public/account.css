@@ -1,3 +1,17 @@
+body {
+  color: #262626;
+  color: rgba(var(--i1d, 38, 38, 38), 1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+.none-decoration-a {
+  text-decoration: none;
+  color: #00376b;
+  color: rgba(var(--fe0, 0, 55, 107), 1);
+}
+
 .account-container {
   padding: 30px 20px 0;
   margin: 0 auto 30px;
@@ -43,6 +57,7 @@
   font-weight: 600;
   padding: 5px 9px;
   text-align: center;
+  line-height: 18px;
 }
 
 .account-section-area {
@@ -64,6 +79,7 @@
   font-size: 28px;
   line-height: 32px;
   margin: -5px 0 -6px;
+  font-family: inherit;
 }
 
 .section-sub-area {
@@ -76,15 +92,40 @@
 .section-sub-li {
   font-style: 16px;
   margin-right: 40px;
+  font-family: inherit;
 }
 
 .section-user-info-area {
   font-size: 16px;
   line-height: 24px;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 .section-user-name {
+  display: inline;
   font: inherit;
   font-weight: 600;
+  margin: 0;
+}
+.section-user-phrase {
+  margin: 0;
+}
+.section-user-link {
+  font: inherit;
+  color: #3f79af;
+  text-decoration: none;
+}
+.section-link {
+  font: inherit;
+  color: #2666a1;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .article-selector-container {
@@ -98,38 +139,47 @@
   margin-right: 60px;
 }
 .article-selector {
-  height: 52px;
-}
-.article-selector {
-  text-decoration: none;
-  color: #00376b;
-  color: rgba(var(--fe0, 0, 55, 107), 1);
   align-items: center;
-  text-align: center;
   height: 52px;
 }
+.article-selector-span {
+  display: flex;
+  flex-direction: row;
+  line-height: 52px;
+  align-items: center;
+}
+.article-selector-icon {
+  fill: rgb(38, 38, 38);
+  height: 16px;
+  width: 16px;
+}
+.article-selector-sub-text {
+  padding-left: 6px;
+}
+/*
 a a:visited {
   color: #00376b;
   color: rgba(var(--fe0, 0, 55, 107), 1);
   text-decoration: none;
-}
+}*/
 .account-articles-container {
   display: flex;
   flex-direction: column;
-  flex: 1 0 0%;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 .account-articles {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
-  justify-content: space-between;
-  width: 100%;
+  /* justify-content: space-between; */
 }
 .account-article {
   width: 100%;
+  flex: 1 0 0%;
   margin-right: 28px;
 }
 .account-article-image {
-  max-width: 300px;
-  min-width: 0px;
+  max-width: 295px;
+  min-width: 50px;
 }
