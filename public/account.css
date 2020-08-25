@@ -156,12 +156,7 @@ body {
 .article-selector-sub-text {
   padding-left: 6px;
 }
-/*
-a a:visited {
-  color: #00376b;
-  color: rgba(var(--fe0, 0, 55, 107), 1);
-  text-decoration: none;
-}*/
+
 .account-articles-container {
   display: flex;
   flex-direction: column;
@@ -172,7 +167,6 @@ a a:visited {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
-  /* justify-content: space-between; */
 }
 .account-article {
   width: 100%;
